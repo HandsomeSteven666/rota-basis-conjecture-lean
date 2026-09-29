@@ -1,0 +1,15 @@
+name = "lean-mathlib-demo"
+version = "0.1.0"
+defaultTargets = ["LeanMathDemo"]
+
+# mathlib 版本已固定：rev 指向具体提交，配合 lake-manifest.json 完全可复现
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "56a9a88447f391672d7aeea117da03b6f7016b0d"
+
+[[lean_lib]]
+name = "LeanMathDemo"
+
+[[lean_lib]]
+name = "RotaBasis"
