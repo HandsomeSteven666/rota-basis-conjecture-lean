@@ -8,6 +8,13 @@ We formalize the **vector-space version** of Rota's basis conjecture over an
 arbitrary field `K` and dimension `n`, and we prove the non-trivial `n = 2`
 case constructively.
 
+The general `n` remains open.  **Status (2026-09-29):** `n = 2` is formally
+proven below.  `n = 3` is a known theorem (Chan 1995, all rank-≤3 matroids, hence
+every field) but is **not** yet formalized in this file.  Note: the Onn/Alon–Tarsi
+colored-determinant identity does **not** apply to `n = 3` (its constant
+`AT(3) = ELS(3) − OLS(3) = 0`), so no elementary determinant shortcut exists for
+`n = 3`; the only proof is Chan's rank-3 matroid/exchange case-distinction.
+
 ## Statement
 
 Let `V = Kⁿ` be the standard `n`-dimensional vector space over a field `K`.
