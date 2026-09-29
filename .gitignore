@@ -1,0 +1,15 @@
+# ---- Lean 构建产物（mathlib 由 lakefile.toml 的 rev 自动拉取，勿提交）----
+.lake/
+build/
+*.olean
+lakefile.olean
+leanprover-community-*
+
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+
+# WorkBuddy 内部状态（含私人笔记），勿入库
+.workbuddy/
+rota_lean/
