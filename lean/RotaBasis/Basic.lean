@@ -15,6 +15,15 @@ colored-determinant identity does **not** apply to `n = 3` (its constant
 `AT(3) = ELS(3) − OLS(3) = 0`), so no elementary determinant shortcut exists for
 `n = 3`; the only proof is Chan's rank-3 matroid/exchange case-distinction.
 
+The `n = 3` case is scaffolded in `RotaBasis.Three` following Geelen–Humphries
+(2006), *Rota's Basis Conjecture for Paving Matroids*, Theorem 2.1 (the paving
+subclass; the general vector-space case reduces to it via Chan's "relax lines"
+technique).  As of 2026-09-29 `RotaBasis.Three` compiles but is a `sorry`
+skeleton: the explicit 9-point model, `paving`, `transversal`, `independent`
+and the proven `vec_injective_of_paving` are in place, while the case-analysis
+lemmas (`sub_2_1_1`, `sub_2_1_2`, `sub_2_1_3`, …) and the prime `rotaStatement_three`
+remain unproven.
+
 ## Statement
 
 Let `V = Kⁿ` be the standard `n`-dimensional vector space over a field `K`.
